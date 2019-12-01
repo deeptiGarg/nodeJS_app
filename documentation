@@ -1,0 +1,16 @@
+##MIDDLEWARE - 
+
+All the functions which have acces to the (req, res) objects and interact to actually manage 
+the application authentication, error handling, DB connections, logging etc.
+
+Logging - middelware/logger.js => custom simple logging example.
+In this project,we use third party logging package called 'morgan' 
+
+All middelware functions take in (req, res, next)
+next -> to tell the server to run the next middleware function as mentioned 
+
+### dotenv - Sets an environment eg. prod, dev, test.
+The variables u set in the config.env are loaded into the process.env object and can be accessed in the code through process.env
+
+### CONTROLLERS - (middleware)
+Contain the functions which have the actual logic of the apis. get data from DB, create response object.
